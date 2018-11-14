@@ -1,0 +1,60 @@
+<!-- In your HTML, create an article tag that will serve as your main representative component. Give the element a unique identifier.
+In this component, create a sub-component for basic information using the section tag. In this section create elements for the representative's image, name, district info, and political affiliation.
+Beneath the basic information, you will create a sub-component, using a section tag, to list any committees the candidate is serving on.
+The last component will hold links to any legislation that your representative has enacted.
+Make sure you use good BEM-style class names for each element in your components. Put a comment above each component explaining what it is. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
+    <title>My Congressional Representative</title>
+</head>
+<body>
+    <article id="representative">
+        <!-- Section containing basic info -->
+        <section>
+            <!-- Image of Representative -->
+            <img src="https://www.govtrack.us/data/photos/412478-100px.jpeg" alt="image of Diane Black" class="representative_pic">
+            <!-- Representative's Name -->
+            <div class="representative_name">
+                <h1>Diane Black</h1>
+            </div>
+            <!-- Representative's District -->
+            <div class="representative_district">
+                <h4>Tennessee 6th Congressional District</h4>
+            </div>
+            <!-- Representative's party -->
+            <div class="representative_affiliation">
+                    <h4>Republican</h4>
+            </div>
+        </section>
+        <section>
+            <!--List of committes served on -->
+            <h5>Committee Service</h5>
+                <div class="representative_committees">
+                    <ul>
+                        <li>House Committee on the Budget</li> 
+                        <li>House Committee on Ways and Means</li>
+                        <li>Member, Subcommittee on Health</li>              
+                    </ul>
+                </div>
+                <!-- Legislation sponsored -->
+                <h5>Legislation Enacted</h5>
+                <div class="representative_legislation">
+                    <ul>
+                        <li>H.R. 5714: EDU Act of 2018</li> 
+                        <li>H.J.Res. 43: Providing for congressional disapproval under chapter 8 of title 5, United States Code, of the final rule submitted by Secretary of Health and Human Services relating to compliance</li>
+                        <li>H.R. 2775 (113th): Continuing Appropriations Act, 2014</li>           
+                    </ul>
+                </div>
+        </section>
+
+
+
+    </article>
+    
+</body>
+</html>
